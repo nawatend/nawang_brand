@@ -1,0 +1,299 @@
+@import './fonts.sass'
+@import './variables.sass'
+@import './functions.sass'
+@import './colors.sass'
+@import './base.sass'
+
+#top_red
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+    #top_red_shape
+        width: 100%
+        height: 420px
+
+.wrapper
+    height: auto
+    width: 100%    
+    margin: 0 auto 
+    position: relative
+    display: flex
+    @include flexbox(space-between,center,wrap)
+
+.section__home
+    width: 100%    
+    height: 100vh
+   
+.section__about
+    width: 100%    
+    background-color: $light-bg-color
+    padding-bottom: 100px
+.section__projects
+    width: 100%    
+    background-color: white
+
+
+#home    
+    
+    width: $main-content-width
+    @include flexbox(space-between,center,wrap)
+    margin: 0 auto
+    height: 100%
+    #arrow_down
+        width: 50px
+        height: 50px
+
+#about
+    width: $main-content-width
+    margin: 0 auto
+    height: auto
+    
+    .about__info
+        @include flexbox(space-between,center,wrap)
+
+.nav
+    position: absolute
+    top: 0
+    
+    width: $main-content-width
+    margin: 0 calc((100% - 75%) /2)
+    @include flexbox(space-between,center,wrap)
+    height: 120px
+
+
+
+.nav__right
+    width: 45%
+    @include flexbox(space-between,center,wrap)
+    .nav--item
+        font-size: 20px
+        font-family: $text
+        color: white
+        cursor: pointer
+        margin-left: 30px
+
+
+.intro__text
+    font-family: $title
+    font-size: 56px
+    line-height: 56px
+    span
+        color: $main-color
+        text-transform: uppercase
+
+.intro__viewprojects
+    margin-top: 45px
+    height: 50px
+    font-family: $title
+    padding: 10px 30px
+    color: white
+    text-transform: capitalize
+    font-size: 25px
+    background-color: $main-color
+    width: 175px
+    @include flexbox(space-between,center,wrap)
+#btnViewProjects
+    cursor: pointer
+.intro__svg
+    align-self: flex-end
+    height: 413px
+
+#intro_svg
+    
+    background: url(../images/avatar.svg) no-repeat
+    width: 100%
+    height: 100%
+    
+    
+
+
+.container__home
+    #btnViewProjects
+        cursor: pointer
+
+
+.about__info
+    @include flexbox(space-between,center,wrap)
+    .user__image
+        @include flexbox(center,center,wrap)
+        .profile__image
+            width: 200px
+            height: 200px
+            border-radius: 50%
+            border: 5px solid $main-color
+        
+
+.container__skills
+    //item floating so no heights
+    overflow: hidden
+    @include flexbox(space-between,flex-start,wrap)
+    .skill
+        height: 30px
+        background-color: #fff
+        margin-top: 20px
+        @include flexbox(flex-start,center,wrap)
+        width: 100%
+        .score
+            @include flexbox(flex-start,center,wrap)
+            font-family: $text
+            text-transform: uppercase
+            font-weight: bold
+            color: white
+            height: 30px
+        .html
+            background-color: #F1662A
+            width: 90%
+            padding-left: 7px
+        .css
+            background-color: #33A9DC
+            width: $main-content-width
+            padding-left: 7px
+        .javascript
+            background-color: #D6BA32
+            width: $main-content-width
+            padding-left: 7px
+        .php
+            background-color: #A476CB
+            width: 65%
+            padding-left: 7px
+        .sql
+            background-color: #006790
+            width: 70%
+            padding-left: 7px
+        .xd
+            background-color: #F72ABC
+            width: 70%
+            padding-left: 7px
+        .ai
+            background-color: #DE982E
+            width: $main-content-width
+            padding-left: 7px
+        .ps
+            background-color: #248EAC
+            width: 70%
+            padding-left: 7px
+        .pizza
+            background-color: #292929
+            width: 100%
+            padding-left: 7px
+
+.coming__skills
+    .skill
+        height: 30px
+        background-color: #fff
+        margin-top: 20px
+        @include flexbox(flex-start,center,wrap)
+        width: 100%
+        .score
+            @include flexbox(flex-start,center,wrap)
+            font-family: $text
+            text-transform: uppercase
+            font-weight: bold
+            color: white
+            height: 30px
+        .react
+            background-color: #00D1F7
+            width: 20%
+            padding-left: 7px
+        .skiing
+            background-color: #292929
+            width: 20%
+            padding-left: 7px
+        .laravel
+            background-color: #EB4D43
+            width: 20%
+            padding-left: 7px
+        .blank
+            background-color: white
+            width: 20%
+            padding-left: 7px
+.goals
+    @include flexbox(space-evenly,center,wrap)
+    margin-top: 100px
+
+    .goal
+        @include flexbox(center,center,wrap)
+        flex-direction: column
+        .goal__title
+            font-family: $subtitle
+            font-size: 26px
+            margin-bottom: 25px
+            color: $light-secondary-color
+        .goal__circle
+            background-color: $main-color
+            border-radius: 50%
+            height: 250px
+            width: 250px
+            @include flexbox(center,center,wrap)
+        .goal__description
+            color: $light-secondary-color
+            font-family: $text
+            font-size: 18px
+            margin-bottom: 10px
+            width: 70%
+            text-align: center
+            margin-top: 25px
+
+#container__projects
+    width: $main-content-width
+    margin: 0 auto
+    .projects
+        width: 100%
+        @include flexbox(space-between,center,wrap)
+        .project
+            
+            height: 500px
+            background-color: rgba(0,0,0,0.2)
+            margin-top: 50px
+        .project:first-child
+            margin-top: 20px
+        .project:last-child
+            margin-bottom: 100px
+
+
+.section__contacts
+    width: 100%    
+    background-color: $light-bg-color
+    #container__contacts
+        width: $main-content-width
+        @include flexbox(space-between,center,wrap)
+        margin: 0 auto
+        height: 100%
+        .message
+            font-family: $text
+            font-size: 20px
+            width: 100%
+        .contacts
+            @include flexbox(flex-start,center,wrap)
+            flex-direction: column
+            margin-top: 50px
+            margin-bottom: 100px
+            .contact                
+                @include flexbox(flex-start,center,wrap)
+                margin-top: 15px
+                .small__circle
+                    border-radius: 50%
+                    background-color: $main-color
+                    height: 70px
+                    width: 70px
+                .contact__text
+                    margin-left: 25px
+                    font-size: 18px
+                    font-family: $text
+                    color: $light-secondary-color
+footer
+    height: 100px
+    background-color: $light-secondary-color
+    color: $main-color
+    font-size: 18px
+    font-family: $text
+    @include flexbox(space-between,center,wrap)
+    .footer
+        width: $main-content-width
+        margin: 0 auto
+        @include flexbox(space-between,center,wrap)
+
+
+@import './responsive.sass'
