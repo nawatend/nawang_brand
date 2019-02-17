@@ -67,9 +67,8 @@ section {
   left: 0;
   width: 100%;
 }
-#top_red #top_red_shape {
+#top_red img {
   width: 100%;
-  height: 420px;
 }
 
 .wrapper {
@@ -189,9 +188,16 @@ section {
 }
 
 #intro_svg {
-  background: url(../images/avatar.svg) no-repeat;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+#intro_svg img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .container__home #btnViewProjects {
@@ -554,6 +560,21 @@ footer .footer {
     width: 100%;
     box-sizing: border-box;
   }
+
+  .intro__text {
+    margin-top: 150px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .intro__viewprojects {
+    height: 35px;
+    margin-top: 30px;
+  }
+
+  #home {
+    width: 85%;
+  }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .col-l-mobile-0 {
@@ -646,6 +667,21 @@ footer .footer {
     width: 100%;
     box-sizing: border-box;
   }
+
+  .intro__text {
+    margin-top: 150px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .intro__viewprojects {
+    height: 35px;
+    margin-top: 30px;
+  }
+
+  #home {
+    width: 85%;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .col-s-tablet-0 {
@@ -737,6 +773,11 @@ footer .footer {
     display: block;
     width: 100%;
     box-sizing: border-box;
+  }
+
+  .intro__text {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
