@@ -110,8 +110,10 @@
     .intro__viewprojects
         height: 35px
         margin-top: 30px
-
-    
+    .profile__image
+        margin-top: 50px
+    #home
+        @include flexbox(center,center,wrap)
 @media screen and (min-width: 321px) and (max-width: 480px)
     @include generateCols('l-mobile')
 
@@ -126,8 +128,10 @@
         height: 35px
         margin-top: 30px
 
-
-    
+    .profile__image
+        margin-top: 50px
+    #home
+        @include flexbox(center,center,wrap)
 
     
 @media screen and (min-width: 481px) and (max-width: 768px)
@@ -135,7 +139,7 @@
     .intro__text
         font-size: 40px
         line-height: 40px
-
+    
 
 @media screen and (min-width: 769px) and (max-width: 1024px)
     @include generateCols('tablet')
