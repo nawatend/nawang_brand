@@ -111,10 +111,13 @@
         height: 35px
         margin-top: 30px
 
-    #home 
-        width: 85%
+    
 @media screen and (min-width: 321px) and (max-width: 480px)
     @include generateCols('l-mobile')
+
+    .nav
+        width: 80%
+        height: 100px
     .intro__text
         margin-top: 150px
         font-size: 30px
@@ -124,8 +127,9 @@
         margin-top: 30px
 
 
-    #home 
-        width: 85%
+    
+
+    
 @media screen and (min-width: 481px) and (max-width: 768px)
     @include generateCols('s-tablet')
     .intro__text
