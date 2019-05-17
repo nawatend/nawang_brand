@@ -7,14 +7,13 @@ window.addEventListener('resize', function (event) {
     console.log(window.innerWidth);
     let widthInnerWindow = window.innerWidth;
 
-    if (widthInnerWindow <= 1245) {
+    if (widthInnerWindow <= 768) {
         menuBars.classList.remove('remove__element');
         normalNavigation.classList.add('remove__element');
 
     } else {
         menuBars.classList.add('remove__element');
         normalNavigation.classList.remove('remove__element');
-
     }
 });
 
@@ -23,7 +22,7 @@ window.addEventListener('resize', function (event) {
 console.log(window.innerWidth);
 let widthInnerWindow = window.innerWidth;
 
-if (widthInnerWindow <= 1245) {
+if (widthInnerWindow <= 768) {
     menuBars.classList.remove('remove__element');
     normalNavigation.classList.add('remove__element');
 

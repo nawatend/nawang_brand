@@ -103,27 +103,32 @@
 
 @media screen and (min-width: 0px) and (max-width: 320px)
     @include generateCols('mobile')
+    .nav
+        width: 80%
+        height: 15vh
     .intro__text
-        margin-top: 150px
-        font-size: 30px
-        line-height: 30px
+        margin-top: 20px
+        font-size: 40px
+        line-height: 40px
     .intro__viewprojects
         height: 35px
         margin-top: 30px
+
     .profile__image
         margin-top: 50px
     #home
         @include flexbox(center,center,wrap)
+        height: 100%
 @media screen and (min-width: 321px) and (max-width: 480px)
     @include generateCols('l-mobile')
 
     .nav
         width: 80%
-        height: 100px
+        height: 15vh
     .intro__text
         margin-top: 150px
-        font-size: 30px
-        line-height: 30px
+        font-size: 44px
+        line-height: 44px
     .intro__viewprojects
         height: 35px
         margin-top: 30px
@@ -133,20 +138,30 @@
     #home
         @include flexbox(center,center,wrap)
 
+    #container__projects .projects .project 
+        height: 240px
+
     
 @media screen and (min-width: 481px) and (max-width: 768px)
     @include generateCols('s-tablet')
     .intro__text
-        font-size: 40px
-        line-height: 40px
+        font-size: 54px
+        line-height: 54px
+    #container__projects .projects .project 
+        height: 270px
     
 
 @media screen and (min-width: 769px) and (max-width: 1024px)
     @include generateCols('tablet')
+    #container__projects .projects .project 
+        height: 340px
     
 
 @media screen and (min-width: 1025px) and (max-width: 1440px)
     @include generateCols('desktop')
+    #container__projects .projects .project 
+        height: 340px
 
 @media screen and (min-width: 1441px) and (max-width: 9999999px)    
     @include generateCols('wide-desktop')
+    
