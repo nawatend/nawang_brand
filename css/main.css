@@ -292,7 +292,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #E2514B;
+  border: 3px solid #E2514B;
 }
 
 .container__skills {
@@ -480,9 +480,44 @@ section {
   flex-wrap: wrap;
 }
 #container__projects .projects .project {
-  height: 500px;
-  background-color: rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  font-family: poppins-medium;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   margin-top: 50px;
+}
+#container__projects .projects .project .project_image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#container__projects .projects .project .project_image-container img {
+  width: 450px;
+  height: 450px;
+}
+#container__projects .projects .project .project_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#container__projects .projects .project .project_info .project_info-title {
+  font-size: 35px;
+  font-family: poppins-semibold;
+  color: #E2514B;
+}
+#container__projects .projects .project .project_info .project_info-description {
+  font-size: 16px;
+}
+#container__projects .projects .project .project_info .project_info-code {
+  margin-top: 80px;
+  font-size: 20px;
+  font-family: poppins-semibold;
+  color: #E2514B;
 }
 #container__projects .projects .project:first-child {
   margin-top: 20px;
@@ -809,7 +844,11 @@ footer .footer {
   }
 
   #container__projects .projects .project {
-    height: 240px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -910,7 +949,11 @@ footer .footer {
   }
 
   #container__projects .projects .project {
-    height: 270px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1006,7 +1049,11 @@ footer .footer {
   }
 
   #container__projects .projects .project {
-    height: 340px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -1102,7 +1149,7 @@ footer .footer {
   }
 
   #container__projects .projects .project {
-    height: 340px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 9999999px) {

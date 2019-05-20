@@ -179,7 +179,7 @@
             width: 200px
             height: 200px
             border-radius: 50%
-            border: 5px solid $main-color
+            border: 3px solid $main-color
         
 
 .container__skills
@@ -310,14 +310,38 @@
         width: 100%
         @include flexbox(space-between,center,wrap)
         .project
-            
-            height: 500px
-            background-color: rgba(0,0,0,0.2)
+            padding: 50px
+            font-family: $text
+            @include flexbox(space-between,center,wrap)
+            @include magicBoxShadow()
             margin-top: 50px
+            .project_image-container
+                @include flexbox(center,center,wrap)
+                img
+                    width: 450px
+                    height: 450px
+            .project_info
+                
+                @include flexbox(flex-start,center,wrap)
+                .project_info-title
+                    font-size: 35px
+                    font-family: $subtitle
+                    color: $main-color
+                .project_info-description
+                    font-size: 16px
+                .project_info-code
+                    margin-top: 80px
+                    font-size: 20px
+                    font-family: $subtitle
+                    color: $main-color
+
         .project:first-child
             margin-top: 20px
         .project:last-child
             margin-bottom: 100px
+
+        
+        
 
 
 .section__contacts
