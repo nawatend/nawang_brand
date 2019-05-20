@@ -550,7 +550,7 @@ section {
 .section__contacts #container__contacts .contacts {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 50px;
@@ -723,6 +723,22 @@ footer .footer {
     flex-wrap: wrap;
     height: 100%;
   }
+
+  #container__contacts .contacts .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #container__projects .projects .project {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .col-l-mobile-0 {
@@ -849,6 +865,14 @@ footer .footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  #container__contacts .contacts .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -943,6 +967,10 @@ footer .footer {
     box-sizing: border-box;
   }
 
+  .profile__image {
+    margin-top: 50px;
+  }
+
   .intro__text {
     font-size: 54px;
     line-height: 54px;
@@ -950,6 +978,13 @@ footer .footer {
 
   #container__projects .projects .project {
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #container__contacts .contacts .contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1151,6 +1186,13 @@ footer .footer {
   #container__projects .projects .project {
     height: auto;
   }
+
+  #container__contacts .contacts .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1441px) and (max-width: 9999999px) {
   .col-wide-desktop-0 {
@@ -1242,6 +1284,13 @@ footer .footer {
     display: block;
     width: 100%;
     box-sizing: border-box;
+  }
+
+  #container__contacts .contacts .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
