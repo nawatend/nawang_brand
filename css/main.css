@@ -168,6 +168,15 @@ section {
   height: 15vh;
 }
 
+.download__cv {
+  padding: 10px;
+  padding-left: 0px;
+}
+.download__cv a {
+  color: #E2514B;
+  font-family: poppins-medium;
+}
+
 .menu__bars {
   display: flex;
   justify-content: space-between;
