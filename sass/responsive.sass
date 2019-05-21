@@ -112,6 +112,7 @@
         line-height: 40px
     .intro__viewprojects
         height: 35px
+        line-height: 35px
         margin-top: 30px
 
     .profile__image
@@ -126,6 +127,16 @@
         height: auto
         @include flexbox(center,center,wrap)
         padding: 10px
+
+    .nav_left
+        .nav__logo img
+            height: 7vh
+            widows: 4vh
+    .nav__right
+        width: 80%
+        .nav--item
+            margin-left: 10px
+            font-size: 13px
 @media screen and (min-width: 321px) and (max-width: 480px)
     @include generateCols('l-mobile')
 
@@ -139,6 +150,7 @@
     .intro__viewprojects
         height: 35px
         margin-top: 30px
+        line-height: 35px
 
     .profile__image
         margin-top: 50px
@@ -152,7 +164,15 @@
 
     #container__contacts .contacts .contact
         @include flexbox(center,center,wrap)
-
+    .nav_left
+        .nav__logo img
+            height: 7vh
+            widows: 4vh
+    .nav__right
+        width: 80%
+        .nav--item
+            margin-left: 10px
+    
 
     
 @media screen and (min-width: 481px) and (max-width: 768px)
@@ -168,14 +188,20 @@
 
     #container__contacts .contacts .contact
         @include flexbox(center,center,wrap)
-    
+    .nav_left
+
+    .nav__right
+        width: 80%
 
 @media screen and (min-width: 769px) and (max-width: 1024px)
     @include generateCols('tablet')
     #container__projects .projects .project 
         height: auto
         @include flexbox(center,center,wrap)
-    
+    .nav_left
+
+    .nav__right
+        width: 60%
 
 @media screen and (min-width: 1025px) and (max-width: 1440px)
     @include generateCols('desktop')
@@ -183,6 +209,11 @@
         height: auto
     #container__contacts .contacts .contact
         @include flexbox(center,center,wrap)
+
+    .nav__left
+
+    .nav__right
+        width: 60%
 @media screen and (min-width: 1441px) and (max-width: 9999999px)    
     @include generateCols('wide-desktop')
     #container__contacts .contacts .contact
