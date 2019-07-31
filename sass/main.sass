@@ -317,6 +317,15 @@
 #container__projects
     margin: 0 auto
     .projects
+        .github
+            width: 100%
+        .github__link
+            display: inline-block
+            padding: 5px 7px
+            border: 1.5px solid $main-color
+            margin-top: 10px
+            color: $main-color
+            font-size: 14px
         width: 100%
         @include flexbox(space-between,center,wrap)
         .project
@@ -330,8 +339,7 @@
                 img
                     width: 450px
                     height: 450px
-            .project_info
-                
+            .project_info 
                 @include flexbox(flex-start,center,wrap)
                 .project_info-title
                     font-size: 35px
