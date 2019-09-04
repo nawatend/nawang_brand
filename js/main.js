@@ -1,5 +1,7 @@
 let btnViewProjects = document.getElementById('btnViewProjects');
 
+AOS.init();
+
 
 btnViewProjects.addEventListener('click', () => {
     console.log('view projects clicked');

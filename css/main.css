@@ -278,7 +278,6 @@ section {
   flex-wrap: wrap; }
   .container__skills .skill {
     height: 30px;
-    background-color: #fff;
     margin-top: 20px;
     display: flex;
     justify-content: flex-start;
@@ -340,15 +339,21 @@ section {
       width: 100%;
       padding-left: 7px; }
 
+.coming__skills .list__skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
 .coming__skills .skill {
-  height: 30px;
-  background-color: #fff;
+  height: 165px;
   margin-top: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 165px; }
   .coming__skills .skill .score {
     display: flex;
     justify-content: flex-start;

@@ -198,7 +198,6 @@
     @include flexbox(space-between,flex-start,wrap)
     .skill
         height: 30px
-        background-color: #fff
         margin-top: 20px
         @include flexbox(flex-start,center,wrap)
         width: 100%
@@ -256,12 +255,14 @@
             padding-left: 7px
 
 .coming__skills
-    .skill
-        height: 30px
-        background-color: #fff
-        margin-top: 20px
-        @include flexbox(flex-start,center,wrap)
+    .list__skills
         width: 100%
+        @include flexbox(space-between,center,wrap)
+    .skill
+        height: 165px
+        margin-top: 20px
+        @include flexbox(center,center,wrap)
+        width: 165px
         .score
             @include flexbox(flex-start,center,wrap)
             font-family: $text
