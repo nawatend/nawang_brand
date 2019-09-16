@@ -50,9 +50,28 @@
     padding-bottom: 100px
     @include flexbox(center,center,wrap)
 
-.section__projects
+.section__question
     width: 100%    
     background-color: white
+    padding: 100px 0px
+    @include flexbox(center,center,wrap)
+    #container__question
+        margin: 0 auto
+    .question
+        text-align: center
+        font-family: $title
+        color: $main-color
+        font-size: 24px
+        span
+            font-family: $text
+            display: block
+            margin-top: 15px
+            text-align: center
+            font-size: 16px
+
+.section__projects
+    width: 100%    
+    background-color: $light-bg-color
 
 
 #home    
@@ -190,12 +209,55 @@
             height: 200px
             border-radius: 50%
             border: 3px solid $main-color
+    p
+        font-size: 20px
+
+
+.knowledge__container
+    margin-bottom: 50px
+    width: 100%
+.knowlegde__skills
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    grid-template-rows: 1fr
+    grid-row-gap: 20px
+    justify-items: center
+    align-items: flex-start
+    
+
+    .skill__category
+        font-family: $text
+        color: $main-color
+        font-size: 22px
+        margin-bottom: 20px
+    .frontend__skills--list
+        width: 200px
+     
+    .backend__skills--list
+        width: 200px
         
+    .design__skills--list
+        width: 200px
+     
+    .tools__skills--list
+        width: 200px
+       
+    ul
+        text-align: center
+        margin-top: 5px
+        margin-bottom: 5px
+        font-family: $text
+        font-size: 18px
+    .upcoming__skill
+        opacity: 0.4
 
 .container__skills
     //item floating so no heights
     overflow: hidden
     @include flexbox(space-between,flex-start,wrap)
+    background-color: pink
+    margin-top: 70px
     .skill
         height: 30px
         margin-top: 20px
@@ -253,6 +315,9 @@
             background-color: #292929
             width: 100%
             padding-left: 7px
+
+
+
 
 .coming__skills
     .list__skills
