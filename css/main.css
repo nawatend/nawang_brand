@@ -589,6 +589,11 @@ section {
           font-size: 18px;
           font-family: poppins-medium;
           color: #292929; }
+          .section__contacts #container__contacts .contacts .contact .contact__text a {
+            text-decoration: none;
+            color: #292929; }
+        .section__contacts #container__contacts .contacts .contact .contact__links {
+          width: 100%; }
 
 footer {
   height: 100px;
