@@ -123,7 +123,7 @@
         widows: 5vh
         
 .nav__right
-    width: 40%
+    width: 25%
     @include flexbox(space-between,center,nowrap)
     flex-direction: row
     position: relative    
@@ -371,9 +371,12 @@
         .goal__circle
             background-color: $main-color
             border-radius: 50%
-            height: 250px
-            width: 250px
+            height: 200px
+            width: 200px
             @include flexbox(center,center,wrap)
+            img
+                width: 60%
+                height: 60%
         .goal__description
             color: $light-secondary-color
             font-family: $text

@@ -189,7 +189,6 @@
 
     #container__contacts .contacts .contact
         @include flexbox(center,center,wrap)
-    .nav_left
 
     .nav__right
         width: 80%
@@ -199,10 +198,9 @@
     #container__projects .projects .project 
         height: auto
         @include flexbox(center,center,wrap)
-    .nav_left
 
     .nav__right
-        width: 60%
+        width: 35%
 
 @media screen and (min-width: 1025px) and (max-width: 1440px)
     @include generateCols('desktop')
@@ -211,10 +209,7 @@
     #container__contacts .contacts .contact
         @include flexbox(center,center,wrap)
 
-    .nav__left
 
-    .nav__right
-        width: 60%
 @media screen and (min-width: 1441px) and (max-width: 9999999px)    
     @include generateCols('wide-desktop')
     #container__contacts .contacts .contact
