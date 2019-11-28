@@ -1,2 +1,2 @@
-sass to css compile node:
-node-sass --watch  sass/main.sass css/main.css
+-sass to css compile
+sass --watch  sass/main.sass css/main.css
