@@ -405,16 +405,18 @@
         width: 100%
         @include flexbox(space-between,center,wrap)
         .project
-            padding: 50px
+            padding: 40px
             font-family: $text
             @include flexbox(space-between,center,wrap)
-            @include magicBoxShadow()
+            
             margin-top: 50px
             .project_image-container
                 @include flexbox(center,center,wrap)
                 img
-                    width: 450px
-                    height: 450px
+                    margin-right: 50px
+                    padding: 20px
+                    width: 100%
+                    //height: 450px
             .project_info 
                 @include flexbox(flex-start,center,wrap)
                 .project_info-title
