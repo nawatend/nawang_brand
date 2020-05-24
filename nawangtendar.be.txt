@@ -1,0 +1,45 @@
+;;
+;; Domain:     nawangtendar.be.
+;; Exported:   2020-04-22 10:11:43
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+nawangtendar.be.	3600	IN	SOA	nawangtendar.be. root.nawangtendar.be. 2033921690 7200 3600 86400 3600
+
+;; A Records
+ftp.nawangtendar.be.	1	IN	A	185.182.56.12
+localhost.nawangtendar.be.	1	IN	A	127.0.0.1
+mail.nawangtendar.be.	1	IN	A	185.182.56.12
+nawangtendar.be.	1	IN	A	192.30.252.153
+pop.nawangtendar.be.	1	IN	A	185.182.56.12
+smtp.nawangtendar.be.	1	IN	A	185.182.56.12
+
+;; CNAME Records
+www.nawangtendar.be.	1	IN	CNAME	nawatend.github.io.
+
+;; MX Records
+nawangtendar.be.	1	IN	MX	20 fallback.axc.eu.
+nawangtendar.be.	1	IN	MX	10 mail.nawangtendar.be.
+
+;; TXT Records
+nawangtendar.be.	1	IN	TXT	"google-site-verification=jm-wTKqItiZHJtQFowhEF9TKphTHAxDAp5Xw11EOqmo"
