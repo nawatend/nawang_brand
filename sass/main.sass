@@ -30,6 +30,17 @@
         font-family: $title
         cursor: pointer
 
+.action__touch
+    position: fixed
+    bottom: 20px
+    right: 20px
+    padding: 10px
+    border: 1px solid $main-color
+    font-family: $subtitle
+    color: $light-secondary-bg-color
+    background-color:  $main-color
+    a
+        color: $light-secondary-bg-color
 
 .wrapper
     height: auto
@@ -53,7 +64,7 @@
 .section__question
     width: 100%    
     background-color: white
-    padding: 100px 0px
+    padding: 200px 0px
     @include flexbox(center,center,wrap)
     #container__question
         margin: 0 auto
@@ -62,13 +73,13 @@
         text-align: center
         font-family: $title
         color: $main-color
-        font-size: 24px
+        font-size: 34px
         span
             font-family: $text
             display: block
             margin-top: 15px
             text-align: center
-            font-size: 16px
+            font-size: 18px
 
 .section__projects
     width: 100%    
@@ -388,6 +399,28 @@
             text-align: center
             margin-top: 25px
 
+
+.primary__button
+    background-color: $main-color
+    color: $light-secondary-bg-color
+    font-family: $subtitle
+    display: inline-block
+    padding: 5px 7px
+    border: 1.5px solid $main-color
+    margin-top: 10px
+    font-size: 14px
+
+.secondary__button
+    border: 1px solid $main-color
+    color: $main-color
+    font-family: $subtitle
+    display: inline-block
+    padding: 5px 7px
+    border: 1.5px solid $main-color
+    margin-top: 10px
+    color: $main-color
+    font-size: 14px
+
 .section__projects   
     @include flexbox(center,center,wrap)
 #container__projects
@@ -443,7 +476,6 @@
 .section__contacts
     @include flexbox(center,center,wrap)
     width: 100%    
-    background-color: $light-bg-color
     #container__contacts
         @include flexbox(space-between,center,wrap)
         margin: 0 auto
