@@ -106,6 +106,7 @@ section {
 }
 
 .action__touch {
+  z-index: 1000;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -357,10 +358,12 @@ section {
   flex-wrap: wrap;
 }
 .about__info .user__image .profile__image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid #E2514B;
+  border-bottom: 4px solid #E2514B;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 .about__info p {
   font-size: 18px;

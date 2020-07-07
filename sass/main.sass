@@ -31,6 +31,7 @@
         cursor: pointer
 
 .action__touch
+    z-index: 1000
     position: fixed
     bottom: 20px
     right: 20px
@@ -217,10 +218,13 @@
     .user__image
         @include flexbox(center,center,wrap)
         .profile__image
-            width: 200px
-            height: 200px
-            border-radius: 50%
-            border: 3px solid $main-color
+            border-bottom: 4px solid $main-color
+            overflow: hidden
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 400px
+
     p
         font-size: 18px
         span
