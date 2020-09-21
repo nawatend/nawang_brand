@@ -71,16 +71,6 @@ section {
   overflow: hidden;
 }
 
-#top_red {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-#top_red img {
-  width: 100%;
-}
-
 .menu__full--page {
   position: fixed;
   top: 0;
@@ -139,6 +129,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #FFFFFF;
 }
 
 .section__about {
@@ -702,6 +693,7 @@ section {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  background-color: #FFFFFF;
 }
 .section__contacts #container__contacts {
   display: flex;

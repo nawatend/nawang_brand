@@ -4,15 +4,15 @@
 @import './colors.sass'
 @import './base.sass'
 
-#top_red
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
+// .darkmode
+//     filter: invert(1) hue-rotate(180deg)
+//     .inverted
+//         filter: invert(1) hue-rotate(180deg)
+//     img
+//         filter: invert(1) hue-rotate(180deg) !important
+//     .btn
+//         filter: invert(1) hue-rotate(180deg)
 
-    img 
-        width: 100%
-        
 .menu__full--page
     position: fixed
     top: 0
@@ -55,6 +55,7 @@
     width: 100%    
     height: 85vh
     @include flexbox(center,center,wrap)
+    background-color: $light-secondary-bg-color
    
 .section__about
     width: 100%    
@@ -479,7 +480,8 @@
 
 .section__contacts
     @include flexbox(center,center,wrap)
-    width: 100%    
+    width: 100%
+    background-color: $light-secondary-bg-color
     #container__contacts
         @include flexbox(space-between,center,wrap)
         margin: 0 auto
