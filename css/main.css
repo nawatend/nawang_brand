@@ -339,7 +339,7 @@ section {
 .about__info {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .about__info .user__image {
@@ -384,16 +384,16 @@ section {
   margin-bottom: 20px;
 }
 .knowlegde__skills .frontend__skills--list {
-  width: 200px;
+  width: 250px;
 }
 .knowlegde__skills .backend__skills--list {
-  width: 200px;
+  width: 250px;
 }
 .knowlegde__skills .design__skills--list {
-  width: 200px;
+  width: 250px;
 }
 .knowlegde__skills .tools__skills--list {
-  width: 200px;
+  width: 250px;
 }
 .knowlegde__skills ul {
   text-align: center;
